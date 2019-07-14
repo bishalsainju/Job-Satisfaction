@@ -4,6 +4,12 @@ import os
 import time
 import csv
 import pandas as pd
+import config.config as config
+
+
+config = config.Config()
+# project_root = config.project_root
+data_path = config.data_path
 
 # Extremely simple logger, writes to file and console (if turned on)
 class SimpleLogger(object):
@@ -40,9 +46,17 @@ def scrape_review(s):
     reviewed_date = check_value_exist(s.find('span', class_='cmp-review-date-created'))
     review_text = check_value_exist(s.find('span', class_='cmp-review-text'))
     pros = check_value_exist(s.find('div', class_='cmp-review-pro-text'))
-    cons = check_value_exist(s.find('div', class_='cmp-review-pro-text'))
-    return (rating_number, review_title, reviewer_job_title, reviewer_job_status, reviewer_job_location, reviewed_date\
-                ,review_text, pros, cons)
+    cons = check_value_exist(s.find('div', class_='cmp-review-con-text'))
+    rate_table = s.find('table', class_='cmp-ratings-expanded')
+    trs = rate_table.find_all('tr')
+    rate_dims = []
+    for tr in trs:
+        span = tr.find_all('span')
+        rate_dims.append(float(span[0]['style'][7:-2]) / 20)
+
+    return (rating_number, rate_dims[0], rate_dims[1], rate_dims[2], rate_dims[3], rate_dims[4],
+            review_title, reviewer_job_title, reviewer_job_status, reviewer_job_location,
+            reviewed_date,review_text, pros, cons)
 
 
 def scrape_reviews(url_ext, logger, start_page):
@@ -96,8 +110,9 @@ def store_the_reviews(filename, company_site, logger, start_page, start_index):
         with open(filename, 'w+', newline='') as file:
             print('a')
             csv_file = csv.writer(file)
-            csv_file.writerow(['Index', 'Rating_Number', 'Review_Title', 'Reviewer_Job_Title', 'Reviewer_Job_Status',
-                               'Reviewer_Job_Location',
+            csv_file.writerow(['Index', 'Rating_Number', 'Work_Life', 'Benefits', 'Job_Advancement',
+                               'Management', 'Culture', 'Review_Title', 'Reviewer_Job_Title',
+                               'Reviewer_Job_Status', 'Reviewer_Job_Location',
                                'Reviewed_Date', 'Review_Text', 'Pros', 'Cons'])
 
     with open(filename, 'a', newline='') as file:
@@ -130,7 +145,7 @@ def scrape_company(company, company_name, company_site, start_page, start_index)
 
 
 def scrape_companies(start_company_index, start_page, start_index):
-    df = pd.read_csv('review_site.csv')
+    df = pd.read_csv(data_path + '/scraper_data/review_site.csv')
     logger_all = SimpleLogger('logs.txt', True, True)
     logger_all.log('Scraping for {}'.format(df.iloc[[start_company_index-1]]['Company'].values[0]))
     scrape_company(df.iloc[[start_company_index-1]]['Company'].values[0], \
@@ -149,6 +164,6 @@ def scrape_companies(start_company_index, start_page, start_index):
 
 
 if __name__ == '__main__':
-    path = 'data/companies'
-    # scrape_companies(start_company_index=0, start_page='?start=0', start_index=0)
+    path = data_path + '/companies_updated'
+    scrape_companies(start_company_index=1, start_page='?start=0', start_index=0)
     print("Commented")
