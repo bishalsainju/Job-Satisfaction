@@ -40,15 +40,15 @@ def frequent_generator_companies(companies_list=range(1,51), path=project_root+'
 
 if __name__ == '__main__':
 
-    # frequent_generator_companies(companies_list=[1], path=project_root+'/data/companies',\
-    #                             n_gram = 1, total_terms = 100, satisfied_rating = [4, 5],\
-    #                                  unsatisfied_rating = [1, 2])
-    corpus_satisfied = " ".join(open(project_root + '/data/overall/overall_company_corpus_satisfied.txt',
-                                     mode='r', encoding='utf8').read().splitlines())
-    corpus_unsatisfied = " ".join(open(project_root + '/data/overall/overall_company_corpus_unsatisfied.txt',
-                                       mode='r', encoding='utf8').read().splitlines())
-
-    frequency_generator(output_path=project_root + '/data/overall/term_frequency', texts=corpus_satisfied,
-                        n_gram=1, total_terms=500, satisfy_text="satisfied")
-    frequency_generator(output_path=project_root + '/data/overall/term_frequency', texts=corpus_unsatisfied,
-                        n_gram=1, total_terms=500, satisfy_text="unsatisfied")
+    frequent_generator_companies(companies_list=[5], path=project_root+'/data/companies',\
+                                n_gram = 1, total_terms = 500, satisfied_rating = [4, 5],\
+                                     unsatisfied_rating = [1, 2])
+    # corpus_satisfied = " ".join(open(project_root + '/data/overall/overall_company_corpus_satisfied.txt',
+    #                                  mode='r', encoding='utf8').read().splitlines())
+    # corpus_unsatisfied = " ".join(open(project_root + '/data/overall/overall_company_corpus_unsatisfied.txt',
+    #                                    mode='r', encoding='utf8').read().splitlines())
+    #
+    # frequency_generator(output_path=project_root + '/data/overall/term_frequency', texts=corpus_satisfied,
+    #                     n_gram=1, total_terms=500, satisfy_text="satisfied")
+    # frequency_generator(output_path=project_root + '/data/overall/term_frequency', texts=corpus_unsatisfied,
+    #                     n_gram=1, total_terms=500, satisfy_text="unsatisfied")

@@ -16,6 +16,16 @@ config = config.Config()
 root_path = config.project_root
 
 
+stopwords = open(root_path + "/data/static/preprocessing/stopwords", mode='r', encoding='utf8').\
+        read().splitlines()
+more_stopwords = ['apple', 'amazon', 'job', 'company']
+stopwords.extend(more_stopwords)
+stopwords2 = open(root_path + "/data/static/stopwords.txt", mode='r', encoding='utf8').\
+    read().splitlines()
+stopwords.extend(stopwords2)
+stopwords = sorted(stopwords)
+
+
 def in_sorted_list(lists, item):
     """
     Returns True if the item is in thesorted list else False
@@ -40,17 +50,15 @@ def is_useful_bigram(bigrams, bigram):
     """
     return in_sorted_list(bigrams, bigram)
 
-def generate_unigrams(text, save_filename=root_path + '/data/static/preprocessing/useful_bigrams.txt',\
-                        read_percent=1, unigram_total=100, count_store = False):
-    stopwords = open(root_path + "/data/static/preprocessing/stopwords", mode='r', encoding='utf8'). \
-        read().splitlines()
-    stopwords.append('apple')
-    stopwords2 = open(root_path + "/data/static/stopwords.txt", mode='r', encoding='utf8').\
-        read().splitlines()
-    stopwords.extend(stopwords2)
-    stopwords = sorted(stopwords)
-    assert is_stopwords(stopwords, "yourselves")
+def is_useful_ngram(ngrams, ngram):
+    """
+    Returns True if the bigram is in thesorted list of bigrams else False
+    """
+    return in_sorted_list(ngrams, ngram)
 
+
+def generate_ngrams(text, ngram=1, save_filename=root_path + '/data/static/preprocessing/useful_ngrams.txt',
+                    read_percent=1, ngram_total = 100, count_store=False, sort=False, save_file=False):
     text = text.lower()
     text = text[:int(len(text) * read_percent)]
     text = clean_data(text)
@@ -59,119 +67,68 @@ def generate_unigrams(text, save_filename=root_path + '/data/static/preprocessin
     words = [word for word in words if not is_stopwords(stopwords, word)]
     words = [stemmer.stem(word) for word in words]
 
-    if count_store:
-        unigram = Counter(words).most_common(int(unigram_total))
-    else:
-        unigram = words
-
-    unigram = [str(uni) for uni in unigram]
-
-    with open(save_filename, mode='w', encoding='utf8') as file:
-        file.write("\n".join(unigram))
-
-    return unigram
-
-
-def generate_bigrams(text, save_filename=root_path + '/data/static/preprocessing/useful_bigrams.txt',\
-                        read_percent=1, bigram_total=100, count_store = False):
-    """
-    Given text, generate pairs of useful bigrams
-    :returns : list of useful bigrams
-    >> [a_b, c_d, ]
-    """
-    stopwords = open(root_path + "/data/static/preprocessing/stopwords", mode='r', encoding='utf8').\
-        read().splitlines()
-    stopwords.append('apple')
-    stopwords2 = open(root_path + "/data/static/stopwords.txt", mode='r', encoding='utf8').\
-        read().splitlines()
-    stopwords.extend(stopwords2)
-    stopwords = sorted(stopwords)
-    assert is_stopwords(stopwords, "yourselves")
-
-    text = text.lower()
-    text = text[:int(len(text) * read_percent)]
-    text = clean_data(text)
-
-    words = word_tokenize(text)
-    words = [word for word in words if not is_stopwords(stopwords, word)]
-    # print(len(words), " words")
-    # print(words)
-
-    words = [stemmer.stem(word) for word in words]
-
-    bigrams = nltk.bigrams(words)
-    bigrams = ["_".join(bigram) for bigram in bigrams]
-    # print(bigrams)
-
-    # print("Filtering from {} bigrams".format(len(bigrams)))
-    bigrams_counter = Counter(bigrams).most_common(int(bigram_total))
-    # print(bigrams_counter)
-
-    useful_bigrams = []
-    for bigram, count in bigrams_counter:
-        # print(bigram)
-        a, b = bigram.split("_")
-        if not (is_stopwords(stopwords, a) or is_stopwords(stopwords, b)):
+    if(ngram==1):
+        unigrams_counter = Counter(words).most_common(int(ngram_total))
+        n_grams = []
+        for unigram, count in unigrams_counter:
             if not count_store:
-                useful_bigrams.append(bigram)
+                n_grams.append(unigram)
             else:
-                useful_bigrams.append(str(f'({bigram}, {count})'))
+                n_grams.append(str(f'({unigram}, {count})'))
+    elif(ngram==2):
+        bigrams = nltk.bigrams(words)
+        bigrams = ["_".join(bigram) for bigram in bigrams]
+        bigrams_counter = Counter(bigrams).most_common(int(ngram_total))
+        n_grams = []
+        for bigram, count in bigrams_counter:
+            a, b = bigram.split("_")
+            if not (is_stopwords(stopwords, a) or is_stopwords(stopwords, b)):
+                if not count_store:
+                    n_grams.append(bigram)
+                else:
+                    n_grams.append(str(f'({bigram}, {count})'))
+    elif(ngram==3):
+        trigrams = nltk.trigrams(words)
+        trigrams = ["_".join(trigram) for trigram in trigrams]
+        trigrams_counter = Counter(trigrams).most_common(int(ngram_total))
+        n_grams = []
+        for trigram, count in trigrams_counter:
+            a, b, c = trigram.split("_")
+            if not (is_stopwords(stopwords, a) or is_stopwords(stopwords, b)):
+                if not count_store:
+                    n_grams.append(trigram)
+                else:
+                    n_grams.append(str(f'({trigram}, {count})'))
 
-    # print("Selected a total of {} bigrams".format(len(useful_bigrams)))
+    if sort:
+        n_grams = sorted(n_grams)
 
-    # useful_bigrams = sorted(useful_bigrams)
-    with open(save_filename, mode='w', encoding='utf8') as file:
-        file.write("\n".join(useful_bigrams))
+    if save_file:
+        with open(save_filename, mode='w', encoding='utf8') as file:
+            file.write("\n".join(n_grams))
 
-    return useful_bigrams
+    return n_grams
 
 
-def generate_trigrams(text, save_filename=root_path + '/data/static/preprocessing/useful_trigrams.txt', \
-                      read_percent=1, trigram_total=100, count_store = False):
-    """
-    Given text, generate pairs of useful bigrams
-    :returns : list of useful bigrams
-    >> [a_b, c_d, ]
-    """
-    stopwords = open(root_path + "/data/static/preprocessing/stopwords", mode='r', encoding='utf8').\
-        read().splitlines()
-    stopwords.append('apple')
-    stopwords2 = open(root_path + "/data/static/stopwords.txt", mode='r', encoding='utf8').\
-        read().splitlines()
-    stopwords.extend(stopwords2)
-    stopwords = sorted(stopwords)
-    assert is_stopwords(stopwords, "yourselves")
+def data_preprocess_company(company_index, sentences):
+    unigram_company = generate_ngrams()
+    processed_sentences = []
+    for sentence in sentences:
+        sent_grams = []
+        unigrams = generate_ngrams(sentence, ngram=1, sorted=True)
+        unigrams = [unigram for unigram in unigrams if is_useful]
+        bigrams = generate_ngrams(sentence, ngram=2, sorted=True)
+        trigrams = generate_ngrams(sentence, ngram=3, sorted=True)
+        sent_grams.extend(unigrams)
+        sent_grams.extend(bigrams)
+        sent_grams.extend(trigrams)
+        bigrams = [bigram for bigram in bigrams if is_useful_bigram(self.useful_bigrams, bigram)]
+        sentence += bigrams
 
-    text = text.lower()
-    text = text[:int(len(text) * read_percent)]
-    text = clean_data(text)
+        sentence = " ".join(sentence)
+        processed_sentences.append(sentence)
 
-    words = word_tokenize(text)
-    words = [word for word in words if not is_stopwords(stopwords, word)]
-    # print(len(words), " words")
-    # print(words)
-
-    words = [stemmer.stem(word) for word in words]
-
-    trigrams = nltk.trigrams(words)
-    trigrams = ["_".join(trigram) for trigram in trigrams]
-
-    trigrams_counter = Counter(trigrams).most_common(int(trigram_total))
-
-    useful_trigrams = []
-    for trigram, count in trigrams_counter:
-        # print(bigram)
-        a, b, c = trigram.split("_")
-        if not (is_stopwords(stopwords, a) or is_stopwords(stopwords, b)):
-            if not count_store:
-                useful_trigrams.append(trigram)
-            else:
-                useful_trigrams.append(str(f'({trigram}, {count})'))
-
-    with open(save_filename, mode='w', encoding='utf8') as file:
-        file.write("\n".join(useful_trigrams))
-
-    return useful_trigrams
+    return processed_sentences
 
 
 class Preprocess:
@@ -249,11 +206,16 @@ class Preprocess:
         return processed_sentences
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # text = "My name is Bishal Sainju"
     # text = open(root_path + "/data/static/preprocessing/corpus.txt", mode='r', encoding='utf8')\
     #     .read().lower()\
     #     .replace('\n', ' ')
-    print(generate_trigrams("My name is Bishal Sainju. I love dancing and singing.", read_percent=1, trigram_total=100))
+    # print(generate_trigrams("My name is Bishal Sainju. I love dancing and singing.", read_percent=1, trigram_total=100))
     # pp = Preprocess(bigrams=True)
     # print(pp.preprocess(['My name is Bishal Sainju peace', 'I love playing and dancing']))
+
+if __name__ == '__main__':
+    # generate_ngrams(text, ngram=1, save_filename=root_path + '/data/static/preprocessing/useful_ngrams.txt',
+    #                 read_percent=1, ngram_total=100, count_store=False, sorted=False, save_file=False)
+    print(generate_ngrams("My name is Bishal Sainju. I love dancing and singing.", ngram=1, read_percent=1, sort=True))

@@ -12,7 +12,7 @@ class Config:
         """Project configuration"""
 
         #Path Configurations
-        self.project_root = os.path.join(home, 'Desktop/workspace/glassdoor/indeed')
+        self.project_root = os.path.join(home, 'Desktop/workspace/indeed/Job-Satisfaction')
         self.data_path = os.path.join(self.project_root, "data")
         self.company_path = os.path.join(self.data_path, "companies")
         self.analysis_path = os.path.join(self.project_root, "analysis")
