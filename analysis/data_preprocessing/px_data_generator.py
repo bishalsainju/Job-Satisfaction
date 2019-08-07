@@ -25,9 +25,9 @@ def pxdata_generator(output_path, sentences):
     ngram_company = []
     # print(sentences[:3])
     texts = ' '.join(sentences)
-    ngram_company.append(generate_ngrams(texts, ngram=1, ngram_total = 500, sort=True))
-    ngram_company.append(generate_ngrams(texts, ngram=2, ngram_total = 200, sort=True))
-    ngram_company.append(generate_ngrams(texts, ngram=3, ngram_total = 100, sort=True))
+    ngram_company.append(generate_ngrams(texts, ngram=1, ngram_total = 1000, sort=True))
+    ngram_company.append(generate_ngrams(texts, ngram=2, ngram_total = 500, sort=True))
+    ngram_company.append(generate_ngrams(texts, ngram=3, ngram_total = 300, sort=True))
     processed_sentences = []
     ngram_company[0] = [x for x in ngram_company[0] if not any(c.isdigit() for c in x)]
     ngram_company[1] = [x for x in ngram_company[1] if not any(c.isdigit() for c in x[0])]
@@ -67,7 +67,7 @@ def pxdata_generator_companies(companies_list=range(1,51), path=company_path,
     for company_index in companies_list:
         company_name = df_company_list.iloc[company_index - 1]['Company_Name']
         company_data_path = path + f'/{company_index}_{company_name}/{company_name}.csv'
-        output_path = path + f'/{company_index}_{company_name}/output_data/px_data'
+        output_path = path + f'/{company_index}_{company_name}/output_data/px_data1'
         if not os.path.exists(output_path):
             os.makedirs(output_path)
         df_company = pd.read_csv(company_data_path)
@@ -81,4 +81,4 @@ def pxdata_generator_companies(companies_list=range(1,51), path=company_path,
             print(f'Generated px data for {company_index}. {company_name}')
 
 if __name__ == '__main__':
-    pxdata_generator_companies(companies_list=range(1, 5), rating_procon_text='procon')
+    pxdata_generator_companies(companies_list=range(1, 51), rating_procon_text='procon')
