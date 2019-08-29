@@ -3,10 +3,7 @@ import pandas as pd
 from analysis.data_preprocessing.preprocess import generate_ngrams, is_useful_ngram
 import config.config as config
 
-
 config = config.Config()
-project_root = config.project_root
-data_path = config.data_path
 company_path = config.company_path
 
 def df_filter(rating_list, df):
@@ -18,14 +15,14 @@ def df_filter(rating_list, df):
 def df_filter_procons(df, procon_text = "pros"):
     df_new = pd.DataFrame()
     if procon_text == "pros":
-        df_new = df[["Pros", "Rating_Number", "Reviewer_Job_Status"]]
+        df_new = df[["Pros", "Rating_Number", "Reviewer_Job_Status", 'Reviewed_Year']]
         df_new = df_new.dropna()
         df_new.loc[df_new['Reviewer_Job_Status'] == 'Former Employee', 'Reviewer_Job_Status'] = 0
         df_new.loc[df_new['Reviewer_Job_Status'] == 'Current Employee', 'Reviewer_Job_Status'] = 1
         df_new.rename(columns={"Pros": "Review_Text"}, inplace=True)
         return df_new
     elif procon_text == "cons":
-        df_new = df[["Cons", "Rating_Number", "Reviewer_Job_Status"]]
+        df_new = df[["Cons", "Rating_Number", "Reviewer_Job_Status", 'Reviewed_Year']]
         df_new = df_new.dropna()
         sdf_new = df_new.dropna()
         df_new.loc[df_new['Reviewer_Job_Status'] == 'Former Employee', 'Reviewer_Job_Status'] = 0
@@ -40,6 +37,7 @@ def pxdata_generator(output_path, df_filtered):
     sentences = df_filtered.Review_Text.tolist()
     ratings = df_filtered.Rating_Number.tolist()
     job_status = df_filtered.Reviewer_Job_Status.tolist()
+    reviewed_year = df_filtered.Reviewed_Year.tolist()
     # print(sentences)
     texts = ' '.join(sentences)
     ngram_company.append(generate_ngrams(texts, ngram=1, ngram_total = 1000, sort=True))
@@ -60,6 +58,7 @@ def pxdata_generator(output_path, df_filtered):
         n_grams_list = []
         n_grams_list.append(ratings[count])
         n_grams_list.append(job_status[count])
+        n_grams_list.append(reviewed_year[count])
         n_grams_list.append(sentence)
         for ngram in range(1, 4):
             n_grams = generate_ngrams(sentence, ngram=ngram, sort=True)
@@ -72,7 +71,7 @@ def pxdata_generator(output_path, df_filtered):
         # print(count)
 
     df = pd.DataFrame.from_records(processed_sentences)
-    df.columns = ['Ratings', 'Job_Status', 'Review_Text', 'Unigrams', 'Bigrams', 'Trigrams']
+    df.columns = ['Ratings', 'Job_Status', 'Reviewed_Year', 'Review_Text', 'Unigrams', 'Bigrams', 'Trigrams']
 
     df.to_csv(output_path, encoding='utf-8')
     return processed_sentences
@@ -86,7 +85,7 @@ def pxdata_generator_companies(companies_list=range(1,51), path=company_path,
     for company_index in companies_list:
         company_name = df_company_list.iloc[company_index - 1]['Company_Name']
         company_data_path = path + f'/{company_index}_{company_name}/{company_name}.csv'
-        output_path = path + f'/{company_index}_{company_name}/output_data/px_data2'
+        output_path = path + f'/{company_index}_{company_name}/output_data/px_data3'
         if not os.path.exists(output_path):
             os.makedirs(output_path)
         df_company = pd.read_csv(company_data_path)
@@ -103,5 +102,5 @@ def pxdata_generator_companies(companies_list=range(1,51), path=company_path,
             print(f'Generated px data for {company_index}. {company_name}')
 
 if __name__ == '__main__':
-    pxdata_generator_companies(companies_list=range(1, 51), rating_procon_text='procon')
+    pxdata_generator_companies(companies_list=range(1,51), rating_procon_text='procon')
     # pxdata_generator_companies(companies_list=[5], rating_procon_text='procon')
