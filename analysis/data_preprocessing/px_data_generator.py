@@ -2,7 +2,6 @@ import os
 import pandas as pd
 from analysis.data_preprocessing.preprocess import generate_ngrams, is_useful_ngram
 import config.config as config
-
 config = config.Config()
 company_path = config.company_path
 
