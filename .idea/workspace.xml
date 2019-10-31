@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39a9e950-b47f-4ea5-83e9-7fd443d5a530" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/analysis/jdi/prepx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/data_preprocessing/px_data_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/data_preprocessing/px_data_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/topic_similarity/.ipynb_checkpoints/topic_topic_similarity-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/topic_similarity/.ipynb_checkpoints/topic_topic_similarity-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/topic_similarity/topic_topic_similarity.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/topic_similarity/topic_topic_similarity.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -199,6 +195,8 @@
       <workItem from="1568842929324" duration="5675000" />
       <workItem from="1570481895200" duration="166000" />
       <workItem from="1571104218101" duration="5299000" />
+      <workItem from="1571162952178" duration="569000" />
+      <workItem from="1571165505256" duration="176000" />
     </task>
     <servers />
   </component>
