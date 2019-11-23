@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="39a9e950-b47f-4ea5-83e9-7fd443d5a530" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/clustering/alpha-beta/topic clustering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/clustering/alpha-beta/topic clustering.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +62,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.prepx">
+  <component name="RunManager" selected="Python.fortune500_test">
     <configuration name="hw1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Job-Satisfaction/test/pycharm/hw1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="fortune500_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="indeed" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scraper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper/fortune500_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="prepx" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -122,29 +145,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper/website_generator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="year_includer" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="indeed" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis/data_updater" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/data_updater/year_includer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper/Website_Generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.fortune500_test" />
+        <item itemvalue="Python.website_generator" />
         <item itemvalue="Python.prepx" />
         <item itemvalue="Python.px_data_generator" />
         <item itemvalue="JavaScript Debug.hw1.html" />
-        <item itemvalue="Python.year_includer" />
-        <item itemvalue="Python.website_generator" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +198,12 @@
       <workItem from="1571104218101" duration="5299000" />
       <workItem from="1571162952178" duration="569000" />
       <workItem from="1571165505256" duration="176000" />
+      <workItem from="1573241152627" duration="200000" />
+      <workItem from="1573340748493" duration="260000" />
+      <workItem from="1573414961365" duration="231000" />
+      <workItem from="1573493884317" duration="277000" />
+      <workItem from="1573868288817" duration="4019000" />
+      <workItem from="1574190548716" duration="605000" />
     </task>
     <servers />
   </component>
@@ -218,12 +225,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/indeed$data_preprocessing.coverage" NAME="data_preprocessing Coverage Results" MODIFIED="1561693173578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$website_generator.coverage" NAME="website_generator Coverage Results" MODIFIED="1566169308672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$website_generator.coverage" NAME="website_generator Coverage Results" MODIFIED="1574023226017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper" />
     <SUITE FILE_PATH="coverage/indeed$nltk_setup.coverage" NAME="nltk_setup Coverage Results" MODIFIED="1561703132200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
     <SUITE FILE_PATH="coverage/indeed$wc_text_generator.coverage" NAME="wc_text_generator Coverage Results" MODIFIED="1561848963468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
     <SUITE FILE_PATH="coverage/Job_Satisfaction$prepx.coverage" NAME="prepx Coverage Results" MODIFIED="1571109571065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/jdi" />
     <SUITE FILE_PATH="coverage/indeed$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1563136371250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$fortune500_test.coverage" NAME="fortune500_test Coverage Results" MODIFIED="1565914248053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$fortune500_test.coverage" NAME="fortune500_test Coverage Results" MODIFIED="1574023451186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper" />
     <SUITE FILE_PATH="coverage/Job_Satisfaction$year_includer.coverage" NAME="year_includer Coverage Results" MODIFIED="1566169814505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_updater" />
     <SUITE FILE_PATH="coverage/Job_Satisfaction$generate_corpus.coverage" NAME="generate_corpus Coverage Results" MODIFIED="1563489549810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
     <SUITE FILE_PATH="coverage/indeed$frequent_term_generator.coverage" NAME="frequent_term_generator Coverage Results" MODIFIED="1562178275650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
