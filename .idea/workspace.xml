@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="39a9e950-b47f-4ea5-83e9-7fd443d5a530" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/clustering/alpha-beta/topic clustering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/clustering/alpha-beta/topic clustering.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/clustering/alpha-beta/Hierarchical Clustering Analysis to cluster similar topics together.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/clustering/alpha-beta/Hierarchical Clustering Analysis to cluster similar topics together.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda-tsne-covariance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda-tsne-covariance.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,6 +205,7 @@
       <workItem from="1573493884317" duration="277000" />
       <workItem from="1573868288817" duration="4019000" />
       <workItem from="1574190548716" duration="605000" />
+      <workItem from="1578872121615" duration="870000" />
     </task>
     <servers />
   </component>
