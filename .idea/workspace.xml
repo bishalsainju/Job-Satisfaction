@@ -2,11 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39a9e950-b47f-4ea5-83e9-7fd443d5a530" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/indeed.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/indeed.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/clustering/alpha-beta/Document Clustering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/clustering/alpha-beta/Document Clustering.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis/clustering/alpha-beta/Hierarchical Clustering Analysis to cluster similar topics together.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/clustering/alpha-beta/Hierarchical Clustering Analysis to cluster similar topics together.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/clustering/alpha-beta/Topic Clustering, Topic Proportion, Relevance Calculation, Pro Con Model Similarity Analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/clustering/alpha-beta/Topic Clustering, Topic Proportion, Relevance Calculation, Pro Con Model Similarity Analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/clustering/tf-idf/kmeans clustering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/clustering/tf-idf/kmeans clustering.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/clustering/tf-idf/tf-idf clustering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/clustering/tf-idf/tf-idf clustering.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/data_preprocessing/frequent_term_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/data_preprocessing/frequent_term_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/data_preprocessing/pros_cons_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/data_preprocessing/pros_cons_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/data_preprocessing/px_data_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/data_preprocessing/px_data_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/general_analysis/General Analysis (Thesis).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/general_analysis/General Analysis (Thesis).ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/.ipynb_checkpoints/scrape data summary - data generation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/.ipynb_checkpoints/scrape data summary - data generation-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda-tsne-10-clusters.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda-tsne-10-clusters.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda-tsne-covariance-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda-tsne-covariance-Copy1.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda-tsne-covariance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda-tsne-covariance.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1 - individual company analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1 - individual company analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1- taking all companies px.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1- taking all companies px.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1- taking all companies px4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1- taking all companies px4.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1- taking all companies satisfied_unsatisfied.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1- taking all companies satisfied_unsatisfied.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1-34 topics visualization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/lda1-34 topics visualization.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/lda_manual_prepx/scrape data summary - data generation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/lda_manual_prepx/scrape data summary - data generation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/.ipynb_checkpoints/R analysis-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/.ipynb_checkpoints/R analysis-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/.ipynb_checkpoints/Top Ten Terms-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/.ipynb_checkpoints/Top Ten Terms-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/.ipynb_checkpoints/combo-analysis-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/.ipynb_checkpoints/combo-analysis-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/.ipynb_checkpoints/python-lda-pro_sampled-rs6-lt3-t22-c41%-good_model-Copy1-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/R analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/R analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/Top Ten Terms.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/Top Ten Terms.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/combo-analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/combo-analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/combo-effect.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/combo-effect.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/python-lda-pro_all-rs6-lt3-t12-c40%-good_model-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/python-lda-pro_all-rs6-lt3-t12-c40%-good_model-Copy1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/python-lda-pro_all-rs6-lt3-t12-c40%-good_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/python-lda-pro_all-rs6-lt3-t12-c40%-good_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/python-lda-pro_sampled-rs6-lt3-t12-c40%-good_model-Copy2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/python-lda-pro_sampled-rs6-lt3-t12-c40%-good_model-Copy2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/python-lda-pro_sampled-rs6-lt3-t22-c41%-good_model-Copy1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/python-lda-pro_sampled-rs6-lt3-t22-c41%-good_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/python-lda-pro_sampled-rs6-lt3-t22-c41%-good_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/python-lda-pro_sampled_rs6_gt3_t22-c41%-not_so_good_separatibility.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/python-lda-pro_sampled_rs6_gt3_t22-c41%-not_so_good_separatibility.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/python-lda-pro_sampled_rs6_lt3_t22-c41%-good_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/python-lda-pro_sampled_rs6_lt3_t22-c41%-good_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis2/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/analysis2/test.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,10 +63,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="50921090-4650-42a1-9bcd-67338e445341" />
   <component name="ProjectId" id="1QUYOXnnV137lT86nTeQWmEuYZV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -51,22 +93,7 @@
       <recent name="$PROJECT_DIR$/data/static" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.fortune500_test">
-    <configuration name="hw1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Job-Satisfaction/test/pycharm/hw1.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.px_data_generator">
     <configuration name="fortune500_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="indeed" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="prepx" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="frequent_term_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="indeed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,12 +124,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis/jdi" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis/data_preprocessing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/jdi/prepx.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/data_preprocessing/frequent_term_generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -111,7 +138,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="px_data_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pros_cons_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="indeed" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis/data_preprocessing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/data_preprocessing/pros_cons_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="px_data_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="indeed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.px_data_generator" />
+        <item itemvalue="Python.pros_cons_generator" />
+        <item itemvalue="Python.frequent_term_generator" />
         <item itemvalue="Python.fortune500_test" />
         <item itemvalue="Python.website_generator" />
-        <item itemvalue="Python.prepx" />
-        <item itemvalue="Python.px_data_generator" />
-        <item itemvalue="JavaScript Debug.hw1.html" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +255,8 @@
       <workItem from="1573868288817" duration="4019000" />
       <workItem from="1574190548716" duration="605000" />
       <workItem from="1578872121615" duration="870000" />
+      <workItem from="1585105464089" duration="12975000" />
+      <workItem from="1588704288198" duration="228000" />
     </task>
     <servers />
   </component>
@@ -225,31 +276,70 @@
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="253" key="GridCell.Tab.0.bottom" timestamp="1585779895071">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1585779895071" />
+    <state width="1398" height="253" key="GridCell.Tab.0.center" timestamp="1585779895070">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1585779895070" />
+    <state width="1398" height="253" key="GridCell.Tab.0.left" timestamp="1585779895069">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1585779895069" />
+    <state width="1398" height="253" key="GridCell.Tab.0.right" timestamp="1585779895070">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1585779895070" />
+    <state width="1398" height="253" key="GridCell.Tab.1.bottom" timestamp="1585779895075">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="253" key="GridCell.Tab.1.bottom/0.23.1440.797@0.23.1440.797" timestamp="1585779895075" />
+    <state width="1398" height="253" key="GridCell.Tab.1.center" timestamp="1585779895074">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="253" key="GridCell.Tab.1.center/0.23.1440.797@0.23.1440.797" timestamp="1585779895074" />
+    <state width="1398" height="253" key="GridCell.Tab.1.left" timestamp="1585779895073">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="253" key="GridCell.Tab.1.left/0.23.1440.797@0.23.1440.797" timestamp="1585779895073" />
+    <state width="1398" height="253" key="GridCell.Tab.1.right" timestamp="1585779895075">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="253" key="GridCell.Tab.1.right/0.23.1440.797@0.23.1440.797" timestamp="1585779895075" />
+    <state x="229" y="60" key="SettingsEditor" timestamp="1585105619384">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="229" y="60" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1585105619384" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/indeed$data_preprocessing.coverage" NAME="data_preprocessing Coverage Results" MODIFIED="1561693173578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$website_generator.coverage" NAME="website_generator Coverage Results" MODIFIED="1574023226017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper" />
-    <SUITE FILE_PATH="coverage/indeed$nltk_setup.coverage" NAME="nltk_setup Coverage Results" MODIFIED="1561703132200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/indeed$wc_text_generator.coverage" NAME="wc_text_generator Coverage Results" MODIFIED="1561848963468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$prepx.coverage" NAME="prepx Coverage Results" MODIFIED="1571109571065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/jdi" />
-    <SUITE FILE_PATH="coverage/indeed$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1563136371250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$fortune500_test.coverage" NAME="fortune500_test Coverage Results" MODIFIED="1574023451186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$year_includer.coverage" NAME="year_includer Coverage Results" MODIFIED="1566169814505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_updater" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$generate_corpus.coverage" NAME="generate_corpus Coverage Results" MODIFIED="1563489549810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/indeed$frequent_term_generator.coverage" NAME="frequent_term_generator Coverage Results" MODIFIED="1562178275650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$px_data_generator.coverage" NAME="px_data_generator Coverage Results" MODIFIED="1569114777354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/indeed$pros_cons_generator.coverage" NAME="pros_cons_generator Coverage Results" MODIFIED="1563131465310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1563568438116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/indeed$generate_corpus.coverage" NAME="generate_corpus Coverage Results" MODIFIED="1562077869238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/indeed$txt_to_json.coverage" NAME="txt_to_json Coverage Results" MODIFIED="1561845233698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
     <SUITE FILE_PATH="coverage/indeed$data_clean.coverage" NAME="data_clean Coverage Results" MODIFIED="1561850083135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/indeed$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1561694394605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indeed$word_cloud.coverage" NAME="word_cloud Coverage Results" MODIFIED="1561696669617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
+    <SUITE FILE_PATH="coverage/indeed$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1563136371250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1563568438116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
     <SUITE FILE_PATH="coverage/indeed$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1561764499498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$frequent_term_generator.coverage" NAME="frequent_term_generator Coverage Results" MODIFIED="1563496135763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/indeed$pros_cons_generator.coverage" NAME="pros_cons_generator Coverage Results" MODIFIED="1563131465310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/indeed$website_generator.coverage" NAME="website_generator Coverage Results" MODIFIED="1561682506075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$prepx.coverage" NAME="prepx Coverage Results" MODIFIED="1571109571065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/jdi" />
+    <SUITE FILE_PATH="coverage/indeed$wc_text_generator.coverage" NAME="wc_text_generator Coverage Results" MODIFIED="1561848963468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
+    <SUITE FILE_PATH="coverage/indeed$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1561694394605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$frequent_term_generator.coverage" NAME="frequent_term_generator Coverage Results" MODIFIED="1585169793604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$year_includer.coverage" NAME="year_includer Coverage Results" MODIFIED="1566169814505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_updater" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$test.coverage" NAME="test Coverage Results" MODIFIED="1563589641056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/indeed$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1562128080672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$px_data_generator.coverage" NAME="px_data_generator Coverage Results" MODIFIED="1585374242213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/indeed$frequent_term_generator.coverage" NAME="frequent_term_generator Coverage Results" MODIFIED="1562178275650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/indeed$data_preprocessing.coverage" NAME="data_preprocessing Coverage Results" MODIFIED="1561693173578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
+    <SUITE FILE_PATH="coverage/indeed$nltk_setup.coverage" NAME="nltk_setup Coverage Results" MODIFIED="1561703132200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/indeed$generate_corpus.coverage" NAME="generate_corpus Coverage Results" MODIFIED="1562077869238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$fortune500_test.coverage" NAME="fortune500_test Coverage Results" MODIFIED="1574023451186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$generate_corpus.coverage" NAME="generate_corpus Coverage Results" MODIFIED="1563489549810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/indeed$txt_to_json.coverage" NAME="txt_to_json Coverage Results" MODIFIED="1561845233698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
     <SUITE FILE_PATH="coverage/indeed$test.coverage" NAME="test Coverage Results" MODIFIED="1561839642137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/indeed$scraper.coverage" NAME="scraper Coverage Results" MODIFIED="1563136916291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper" />
-    <SUITE FILE_PATH="coverage/indeed$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1562128080672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
-    <SUITE FILE_PATH="coverage/indeed$website_generator.coverage" NAME="website_generator Coverage Results" MODIFIED="1561682506075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/indeed$word_cloud.coverage" NAME="word_cloud Coverage Results" MODIFIED="1561696669617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/word_cloud" />
-    <SUITE FILE_PATH="coverage/Job_Satisfaction$test.coverage" NAME="test Coverage Results" MODIFIED="1563589641056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$pros_cons_generator.coverage" NAME="pros_cons_generator Coverage Results" MODIFIED="1585368729821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis/data_preprocessing" />
+    <SUITE FILE_PATH="coverage/Job_Satisfaction$website_generator.coverage" NAME="website_generator Coverage Results" MODIFIED="1574023226017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper" />
   </component>
 </project>

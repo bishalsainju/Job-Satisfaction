@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from analysis.data_preprocessing.preprocess import generate_bigrams, generate_unigrams, generate_trigrams
+from analysis.data_preprocessing.preprocess import generate_ngrams
 from analysis.data_preprocessing.generate_corpus import text_generator
 import config.config as config
 
@@ -11,15 +11,9 @@ data_path = config.data_path
 
 
 def frequency_generator(output_path, texts, n_gram, total_terms, satisfy_text):
-    if n_gram == 1:
-        generate_unigrams(texts, save_filename=output_path + f'/{n_gram}_gram_{satisfy_text}.txt',
-                        read_percent=1, unigram_total=total_terms, count_store=True)
-    elif n_gram == 2:
-        generate_bigrams(texts, save_filename=output_path + f'/{n_gram}_gram_{satisfy_text}.txt',
-                          read_percent=1, bigram_total=total_terms, count_store=True)
-    elif n_gram == 3:
-        generate_trigrams(texts, save_filename=output_path + f'/{n_gram}_gram_{satisfy_text}.txt',
-                         read_percent=1, trigram_total=total_terms, count_store=True)
+    generate_ngrams(texts, n_gram, save_filename=output_path + f'/{n_gram}_gram_{satisfy_text}.txt',
+                        read_percent=1, ngram_total=total_terms, count_store=True, sort=False, save_file=True)
+
 
 
 def frequent_generator_companies(companies_list=range(1,51), path=project_root+'/data/companies',\

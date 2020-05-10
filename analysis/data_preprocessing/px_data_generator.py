@@ -6,10 +6,13 @@ config = config.Config()
 company_path = config.company_path
 
 def df_filter(rating_list, df):
-    sentences = []
-    for r in rating_list:
-        sentences.extend(df.loc[df.Rating_Number == r].Review_Text.tolist())
-    return sentences
+    df_new = df[["Review_Text", "Rating_Number", "Reviewer_Job_Status", 'Reviewed_Year',
+                     'Work_Life', 'Benefits', 'Job_Advancement', 'Management', 'Culture']]
+    df_new = df_new.dropna()
+    df_new.loc[df_new['Reviewer_Job_Status'] == 'Former Employee', 'Reviewer_Job_Status'] = 0
+    df_new.loc[df_new['Reviewer_Job_Status'] == 'Current Employee', 'Reviewer_Job_Status'] = 1
+    df_new.rename(columns={"Pros": "Review_Text"}, inplace=True)
+    return df_new
 
 def df_filter_procons(df, procon_text = "pros"):
     df_new = pd.DataFrame()
@@ -55,7 +58,7 @@ def pxdata_generator(output_path, df_filtered):
     processed_sentences = []
     ngram_company[0] = [x for x in ngram_company[0] if not any(c.isdigit() for c in x)]
     ngram_company[1] = [x for x in ngram_company[1] if not any(c.isdigit() for c in x[0])]
-    print(ngram_company[0])
+    # print(ngram_company[0])
     # print(len(ngram_company[0]))
     # print(ngram_company[1])
     # print(len(ngram_company[1]))
@@ -94,20 +97,24 @@ def pxdata_generator(output_path, df_filtered):
 
 
 def pxdata_generator_companies(companies_list=range(1,51), path=company_path,
-                            satisfied_rating = [4, 5], unsatisfied_rating = [1, 2],
+                            rating = [1, 2, 3, 4, 5],
                                rating_procon_text = 'rating'):
 
-    df_company_list = pd.read_csv(config.data_path + "/scraper_data/review_site.csv")
+    df_company_list = pd.read_csv(config.data_path + "/scraper_data/indeed_site50.csv")
     for company_index in companies_list:
         company_name = df_company_list.iloc[company_index - 1]['Company_Name']
         company_data_path = path + f'/{company_index}_{company_name}/{company_name}.csv'
-        output_path = path + f'/{company_index}_{company_name}/output_data/px_data4'
+        output_path = path + f'/{company_index}_{company_name}/output_data/px_data_reviews1'
         if not os.path.exists(output_path):
             os.makedirs(output_path)
         df_company = pd.read_csv(company_data_path)
         if(rating_procon_text=='rating'):
-            pxdata_generator(output_path+'/satisfied.csv', df_filter(satisfied_rating, df_company))
-            pxdata_generator(output_path+'/unsatisfied.csv', df_filter(unsatisfied_rating, df_company))
+            df_former = df_company[df_company.Reviewer_Job_Status == 'Former Employee']
+            df_current = df_company[df_company.Reviewer_Job_Status == 'Current Employee']
+            df_fc = pd.concat([df_former, df_current], ignore_index=True)
+            # pxdata_generator(output_path+'/satisfied.csv', df_filter(satisfied_rating, df_company))
+            # pxdata_generator(output_path+'/unsatisfied.csv', df_filter(unsatisfied_rating, df_company))
+            pxdata_generator(output_path+'/reviews.csv', df_filter(rating, df_fc))
             print(f'Generated px data for {company_index}. {company_name}')
         elif(rating_procon_text=='procon'):
             df_former = df_company[df_company.Reviewer_Job_Status == 'Former Employee']
@@ -119,4 +126,4 @@ def pxdata_generator_companies(companies_list=range(1,51), path=company_path,
 
 if __name__ == '__main__':
     # pxdata_generator_companies(companies_list=range(1,51), rating_procon_text='procon')
-    pxdata_generator_companies(companies_list=[5], rating_procon_text='procon')
+    pxdata_generator_companies(companies_list=range(1, 51), rating_procon_text='rating')
